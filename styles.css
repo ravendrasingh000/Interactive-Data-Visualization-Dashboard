@@ -1,0 +1,115 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: aliceblue;
+}
+
+h1 {
+  text-align: center;
+}
+
+#filters {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#day{
+  padding: 10px;
+  border: 0;
+  outline: 0;
+  background-color:#2a9d8f;
+  color: white;
+  box-shadow: 0px 0px 3px 1px black;
+}
+
+#day:hover{
+  cursor: pointer;
+}
+
+#age{
+  padding: 10px;
+   border: 0;
+  outline: 0;
+  background-color:#2a9d8f;
+  color: white;
+  box-shadow: 0px 0px 3px 1px black;
+}
+
+#age:hover{
+  cursor: pointer;
+}
+
+#gender{
+  padding: 10px;
+   border: 0;
+  outline: 0;
+  background-color:#2a9d8f;
+  color: white;
+  box-shadow: 0px 0px 3px 1px black;
+}
+
+#gender:hover{
+  cursor: pointer;
+}
+
+button{
+  padding: 13px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 2px 2px;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+#filter-btn{
+  background-color: blue;
+  color: white;
+  font-weight: 700;
+}
+
+#filter-btn:hover{
+  background-color: rgb(218, 13, 173);
+  /* color: black; */
+}
+
+#toggle-table-btn{
+  background-color: black;
+  color: white;
+  font-weight: 700;
+}
+
+#toggle-table-btn:hover{
+  background-color: white;
+  color: black;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 30px auto;
+}
+
+#data-table{
+  display: none;
+}
+
+table th,
+table td {
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 8px;
+}
+
+table tr:nth-child(even) {
+  background-color: #606c38;
+}
+
+table th {
+  background-color: #bb0a0a;
+  color: white;
+}

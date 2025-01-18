@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Data Visualization Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <h1>Interactive Data Visualization Dashboard</h1>
+
+<!-- .................filter form.............................. -->
+ 
+    <div id="filters">
+      <label for="day">Day:</label>
+      <input type="date" id="day" />
+      <label for="age">Age:</label>
+      <select id="age">
+        <option value="">All</option>
+        <option value="15-25">15-25</option>
+        <option value=">25">>25</option>
+      </select>
+      <label for="gender">Gender:</label>
+      <select id="gender">
+        <option value="">All</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select>
+      <button id="filter-btn">Filter</button>
+      <button id="toggle-table-btn">Hide/Show Table</button>
+    </div>
+
+    <table id="data-table">
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Age</th>
+          <th>Gender</th>
+          <th>A</th>
+          <th>B</th>
+          <th>C</th>
+          <th>D</th>
+          <th>E</th>
+          <th>F</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <canvas id="chart" width="400" height="100"></canvas>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
